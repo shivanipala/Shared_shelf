@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Shared Shelf-Lend your Book</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="lend.css">
+    </head>
+    <body>
+        <?php
+        
+        
+        <div class="container">
+            <div class="jumbotron">
+                <img src="logo.png" alt="" class="logo">
+                <h1 class="head">Shared Shelf</h1>
+                <h2>Someone's throwaway is someone's treasure...</h2>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form method="post" action="lends.php">
+            
+                            <label for="branch" style="margin-top: 40px; width: 125px;">Branch</label>
+                            <select name="branch" id="branch">
+                                <option value="IT">Information Technology</option>
+                                <option value="CE">Computer</option>
+                                <option value="EC">Electronics and Communication</option>
+                                <option value="IC">Instrumentation and Control</option>
+                                <option value="meta">Metallurgy</option>
+                                <option value="BM">Bio-Medical</option>
+                            </select>
+                            
+                
+                            <br>
+                            
+                            <label for="year" style="margin-top: 40px; width: 125px;">Year</label>
+                            <select name="year" id="year">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <br>
+                            
+                            <label for="subject" style="margin-top: 40px;">Subject</label>
+                            <input type="text" name="subject">
+                        
+                            <br>
+                         
+                            <td><label for="publication">Publication</label>
+                            <td class="answer"><input type="text" name="publication">
+                        
+                            <br>
+                        
+                            <label for="author">Author</label>
+                            <input type="text" name="author">
+                        
+                            <br>
+                            
+                            <label for="subject-code">Subject-Code</label>
+                            <input type="text" name="scode">
+                        
+                            <br>
+                        
+                            <label for="image">Images:</label>
+                        
+                            <br>
+                            <!-- <button class="image"> Choose Image</button> -->
+                            <input type="file" name="image" id="">
+                            <br>
+                            <input type="submit" style="margin-left: 45%; margin-top: 2%; padding: 5px;">SUBMIT</button>
+                            
+                            
+                        </form>
+                
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
